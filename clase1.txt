@@ -1,0 +1,60 @@
+ANGULAR:
+es una plataforma completa de desarrollo, construida en typeScript. 
+
+la logica del componente està en el archivo Ts(TypeScript), el segundo es el template(HTML que tiene las propiedades a tomar de la logica) y el archivo de estilo(CSS) y un 4 que es el archivo de testing(specting(?)
+
+Lib disponibles:
+*Angular Router: navegacion del lado del cliente basada en Componentes
+*Angular Forms: Sistema completo para desarrollo de formularios y validaciones
+*Angular HttpClient: Robusto cliente HTTP para la comunicacion c-s
+*Angular PWA: Herramientas para construir PWA incluyendo un Service Worker y Web App Manifest
+*Angular animations:
+*Angular Schematics: Herramientas que automatizan la creacion de codigo, refactorizacion y act a gran escala
+
+Componentes:
+Son las piezas de construcciòn que componen una aplicacion. Un componente se forma clase en TypeScript decorada con @Component(), una plantilla HTML y estilos. el decorador @Component() especifica la siguiente info para 
+Angular:
+Selector CSS.Los Elementos HTML que coincidan con este selector, seran instancias de este componente / una plantilla HTML, que indica como Angular deberà mostrar el componente / un conjunto de estilos CSS opcionales, que definen la apariencia del componente.
+
+Angular extiendo el codigo HTML con sintaxis adicionales que permiten insertar valores dinamicos desde el componente. Angular automaticamente actualiza la porcion del DOM especìfica del componente al cambiar el estado de la clase asociada.
+
+Inyección de dependencias:
+Permite declarar las deps de una clase TypeScript sin preocuparse por como se instancian. En angular se gestiona la instanciacion. Este patron de diseño permite escribir un codigo mas testeable y flexible
+
+Para crear una app de Angular:
+ng new NOMBRE_DE_APP
+
+Ejecutar el proyecto:
+ng serve -o
+
+Generar codigo fuente:
+ng generate -h 
+
+para crear componentes:
+ng generate component
+
+**Selector: 
+forma univoca del componente para ser llamado desde cualquier parte de la app
+**templateUrl:
+corresponde al html
+**styleUrls:
+los estilos css
+
+interpolacion:
+la interaccion de la logica con el html
+
+Directivas estructurales:
+NgIf= crea o quita elementos en base a una condicion
+ejem:
+<app-item-detail *ngIf="isActive" [item]="item"></app-item-detail>
+
+NgFor = Repite un nodo para c/item de una lista
+ejem:
+<div *ngFor="let item of items">{{item.name}}</div
+
+NgSwitch = Un conjunto de directivas para optar por un nodo u otro según sea el caso
+ejem:
+<div [ngSwitch]="currentItem.feature">
+
+
+
