@@ -1,0 +1,13 @@
+<h2>{{descripcion}}</h2>
+
+<div *ngFor="let articulo of items">
+    <div>
+    <p>ID: {{articulo.id}}</p>
+    <p>{{articulo.descripcion}} - {{articulo.nombre}} </p>
+   
+    <p>{{articulo.precio}}</p>
+    <p>{{articulo.stock}}</p>
+</div>
+    <button (click)="onSelect(articulo)">Ver</button>
+
+</div>

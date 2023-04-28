@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AppClase1": {
+    "AppIntegradora": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app-clase1",
+            "outputPath": "dist/app-integradora",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AppClase1:build:production"
+              "browserTarget": "AppIntegradora:build:production"
             },
             "development": {
-              "browserTarget": "AppClase1:build:development"
+              "browserTarget": "AppIntegradora:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AppClase1:build"
+            "browserTarget": "AppIntegradora:build"
           }
         },
         "test": {
