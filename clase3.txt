@@ -1,0 +1,54 @@
+Crear app:
+ng new nombreApp
+
+crear un modulo:
+ng g m appRouting
+
+dry run:
+ng g m appRouting --dry-run
+ejecuta para ver si està
+para crear solo el archivo:
+ng g m appRouting --flat
+
+crear componentes:
+ng g c 
+
+**se declaran componentes y se importan modulos
+
+**typescript es un traductor de Js. todo lo que se hace en typeScript se traslada a Js
+
+**los componentes se puede cambiar de nombre(en selector)
+
+si queremos hacer una pagua(? debemos intalar bootstrap desde npm
+sino se puede copiar el CDN
+
+**iniciar Angular:
+ng serve -o
+
+**routerLink:
+para matchear las rutas
+**routerLinkActive:
+para que detecte la pag donde estàs
+
+**sobreescribir el navbar desde el scss:
+.navbar-brand{
+  cursor:pointer;
+}
+
+**el icono de la pestaña se cambia desde el index.html(favicon)
+
+**lazyloading(carga perezosa)
+
+**pasar info en angular:
+'pagina2/id'(ejemplo)
+
+ciclo de vida:
+Constructor - ngOnChange - ngOnInit - ngDoCheck - ngAfterContentInit - ngAfterContentChecked - ngAfterViewInit - ngAfterViewChecked -ngOnDestroy
+
+**Angular està basado en MVC - es el unico framework de frontend
+
+**formularios dinamicos, generados por buckets
+
+
+
+
