@@ -1,0 +1,48 @@
+**crear modulo sin una carpeta:
+ng g m nombreModulo --flat
+rutas hijas:
+<a routerLink="child1">Ir al Hijo 1</a>
+
+import { ChildOnePage1Component } from './pages/page1/child-one-page1/child-one-page1.component';
+import { ChildTwoPage1Component } from './pages/page1/child-two-page1/child-two-page1.component';
+
+
+**ionic para crear app mobile:
+https://ionicframework.com/
+**--dry-run para ver que se genera
+lazyloading:
+para hacer aplicaciones livianes
+
+**en una ruta hija, para cargar los modulos :
+loadChildren() => import ().then(m => m.nombreModulo)
+
+**para generar "seguridad":
+ng g g(guard). Se le puede poner logica(dentro del "guard".ts)
+
+*********************************************************************************
+Formulario reactivo:
+toda la logica en el ts
+Formulario template:
+"todo" en el html
+
+**max columna para el form 12
+
+**en el tag form agregar entre [] formGroup="nombreVariable" y para los inputs agregar formControlName. Para deshabilitar un boton [disabled]="form.invalid"
+
+se puede deshabilitar un campo this.form.controls['nombre'].disable();
+
+
+validaciones de formularios:
+<div *ngIf="control?.invalid && (control.dirty || control.touched)">
+  <small *ngIf="control.errors['required']" id="required" class="text-danger">El campo {{name}} es requerido.</small>
+  <small *ngIf="control.errors['minlength']" id="minlength" class="text-danger">El campo {{name}} necesita al menos {{control.errors['minlength'].requiredLength}} caracteres.</small>
+  <small *ngIf="control.errors['maxlength']" id="maxlength" class="text-danger">El campo {{name}} no de contener más de {{control.errors['maxlength'].requiredLength}} caracteres.</small>
+  <small *ngIf="control.errors['email']" id="email" class="text-danger">El campo {{name}} no es un correo válido.</small>
+  <small *ngIf="control.errors['min']" id="min" class="text-danger">El campo {{name}} es menor a {{control.errors['min'].min}}.</small>
+  <small *ngIf="control.errors['max']" id="max" class="text-danger">El campo {{name}} es mayor a {{control.errors['max'].max}}.</small>
+  <small *ngIf="control.errors['pattern']" id="max" class="text-danger">El campo {{name}} no cumple con los criterios.</small>
+</div>
+
+En el ts:
+ @Input() control: AbstractControl;
+  @Input() name: string;
