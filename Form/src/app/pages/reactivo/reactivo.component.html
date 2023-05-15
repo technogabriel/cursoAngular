@@ -20,8 +20,6 @@
 
     </div>
 
-
-
   </div>
   <div class="row justify-content-center mt-3">
     <div class="col-4">
@@ -40,6 +38,18 @@
       </div>
     </div>
   </div>
+
+  <div class="row justify-content-center mt-3">
+  <div class="col-3">
+    <div class="form-group">
+      <label for="exampleFormControlInput4">Bebida</label>
+      <input  formControlName="drink" type="text" class="form-control" name="Bebida" id="edad" placeholder="Cuba Libra">
+      <form-validator [control]="form.controls['drink']" name="Bebida"></form-validator>
+    </div>
+  </div>
+</div>
+
+
   <div class="row justify-content-center mt-3">
     <div class="col-auto">
       <button type="submit" [disabled]="form.invalid" class="btn btn-success">Enviar</button>

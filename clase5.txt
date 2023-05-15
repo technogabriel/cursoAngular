@@ -1,0 +1,18 @@
+Validaciòn de formularios:
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
+**el validator es un array, por eso va [].
+**para la creacion del formulario, desde el componente se utiliza FormGroup:
+Ejemplo:
+this.form = new FormGroup({
+      nombre: new FormControl<string>('', [Validators.minLength(2), Validators.required])})
+
+**libreria Formly(json powered / Dynamic forms in Angular
+
+para formularios template(oldSchool), se usa en el tag form:
+<form #form="ngForm"> y para el submit: (ngSubmit)="save(form)"
+
+ngModel se usa en los inputs para entrada y salida. Ejecuta evento o llevar valores
+se necesita si o si el modelo para trabajar en los templates form
+
+(ngModelChange)
