@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <form [formGroup]="form" (ngSubmit)="enviarMensaje()" class="d-flex">
+      <input formControlName="query" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <p>{{saludo}}</p>
+  </div>
+</nav>

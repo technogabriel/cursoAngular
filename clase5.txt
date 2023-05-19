@@ -16,3 +16,19 @@ ngModel se usa en los inputs para entrada y salida. Ejecuta evento o llevar valo
 se necesita si o si el modelo para trabajar en los templates form
 
 (ngModelChange)
+******************************************************************************
+Inyeccion de dependencias:
+service worker = ejecucion en segundo plano(?
+servicios = para conectar con el back y resolver temas de apps Angular. Para controlar estados en Angular sin utilizar redux
+** generar un servicio:
+ng g service(o s)
+@injectable => que està disponible en toda la aplicacion
+
+los servicios en angular son inyectables
+**si lo voy a usar en una sola pagina, se puede colocar en el component, si no se deja el provider en el services.
+se puede usar por componente y por modulo
+
+**control de estado por servicios(comunicar componentes entre si)
+**redux = herramienta que se utiliza para controlar los estados. Usarlo cuando realmente se necesite
+
+disrosoft
